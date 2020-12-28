@@ -1,6 +1,8 @@
 {
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
+    "commit": "git-cz",
+    "commit-a": "git add . && git-cz",
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
@@ -21,7 +23,14 @@
     "@types/react": "~16.9.35",
     "@types/react-dom": "~16.9.8",
     "@types/react-native": "~0.63.2",
-    "typescript": "~4.0.0"
+    "typescript": "~4.0.0",
+    "commitizen": "^4.1.2",
+    "cz-conventional-changelog": "^3.2.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   },
   "private": true
 }
